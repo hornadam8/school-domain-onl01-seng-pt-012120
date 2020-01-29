@@ -19,6 +19,13 @@ class School
   def grade(num)
     return @roster[num]
   end
+  
+  def sort
+    @roster.collect do |k,v|
+      k.sort!
+    end
+    @roster
+  end
     
   
   
